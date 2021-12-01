@@ -1,0 +1,33 @@
+package json - npm init -y
+
+instalar express y dotenv - npm i express dotenv
+
+require('dotenv').config();
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+    res.send('Oi Mundo');
+});
+
+app.listen( process.env.PORT, () => {
+    console.log('Servidor corriendo en puerto', process.env.PORT);
+} );
+
+
+instalar cors para permitir acceso web - npm i cors
+
+
+Peticion POST regular
+
+    Body - raw - JSON
+
+
+respaldo = agregar gitignore
+
+
+instalar mongoose - npm i mongoose
+
+encriptar contraseñas = npm i bcryptjs
+
+validaciones = npm i express-validator
