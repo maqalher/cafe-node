@@ -31,3 +31,10 @@ instalar mongoose - npm i mongoose
 encriptar contraseñas = npm i bcryptjs
 
 validaciones = npm i express-validator
+
+
+    agregar .env al git ignore
+Eliminar archivo solo de git =  
+    git rm .env --cached
+    git add.
+    git commit -m ".env borrado"
