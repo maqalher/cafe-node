@@ -38,3 +38,14 @@ Eliminar archivo solo de git =
     git rm .env --cached
     git add.
     git commit -m ".env borrado"
+
+    agregar ejemplo de .env
+
+    variables de eontorno heroku
+        heroku config
+
+    agregar variables de entorno 
+        heroku config:set MONGODB_CNN="mongodb+srv://maqueda:Maqueda31@cluster0.p0q89.mongodb.net/cafeDB"
+
+    borrar 
+        heroku config:unset MONGODB_CNN
