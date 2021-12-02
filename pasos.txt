@@ -47,10 +47,20 @@ Eliminar archivo solo de git =
     agregar variables de entorno 
         heroku config:set MONGODB_CNN="mongodb+srv://maqueda:Maqueda31@cluster0.p0q89.mongodb.net/cafeDB"
 
-        heroku config:set SECRETORPRIVATEKEY=Est03sMyPubl1cK3y@"
+        heroku config:set SECRETORPRIVATEKEY="Est03sMyPubl1cK3y@"
+
+        heroku config:set GOOGLE_CLIENT_ID="803974927018-t0notkkiupae5sude013u3ui3iagab5g.apps.googleusercontent.com"
+        heroku config:set GOOGLE_SECRET_ID="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"
 
     borrar 
         heroku config:unset MONGODB_CNN
 
 
 instalar jwt = npm i jsonwebtoken
+
+ver logs heroku 
+    heroku logs -n 100      los ultimos 100 logs
+    heroku logs -n 100 -tail    los mustra en timepo real
+
+
+logeo con google - 
