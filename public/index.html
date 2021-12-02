@@ -33,7 +33,11 @@
 
             const body = {id_token: response.credential}
 
-            fetch('http://localhost:8080/api/auth/google', {
+            console.log( window.location.hostname.includes('localhost') );
+
+            let url = (window.location.hostname.includes('localhost') ) ? 'http://localhost:8080/api/auth/google' : 'https://cafe-node-app.herokuapp.com/api/auth/google'
+
+            fetch(url, {
                 method: 'POST',
                 headers: {
                     'Content-Type':'application/json'
