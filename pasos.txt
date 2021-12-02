@@ -47,5 +47,10 @@ Eliminar archivo solo de git =
     agregar variables de entorno 
         heroku config:set MONGODB_CNN="mongodb+srv://maqueda:Maqueda31@cluster0.p0q89.mongodb.net/cafeDB"
 
+        heroku config:set SECRETORPRIVATEKEY=Est03sMyPubl1cK3y@"
+
     borrar 
         heroku config:unset MONGODB_CNN
+
+
+instalar jwt = npm i jsonwebtoken
