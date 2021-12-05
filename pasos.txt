@@ -64,3 +64,10 @@ ver logs heroku
 
 
 logeo con google - 
+
+
+Para agregar la tabla en mongo es necesario crear el modelo
+
+Para la relecion
+    type: Schema.Types.ObjectId,
+    ref: 'Usuario',  --- El nombre de la referencia debe ser igual que la del modelo al que se esta relacionando
