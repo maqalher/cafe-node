@@ -52,6 +52,9 @@ Eliminar archivo solo de git =
         heroku config:set GOOGLE_CLIENT_ID="803974927018-t0notkkiupae5sude013u3ui3iagab5g.apps.googleusercontent.com"
         heroku config:set GOOGLE_SECRET_ID="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"
 
+        heroku config:set 
+        CLOUDINARY_URL="cloudinary://887246799844538:9Fnz4-6UKIgg_H7cv_ro9gWGfjw@luchadev"
+
     borrar 
         heroku config:unset MONGODB_CNN
 
@@ -71,3 +74,25 @@ Para agregar la tabla en mongo es necesario crear el modelo
 Para la relecion
     type: Schema.Types.ObjectId,
     ref: 'Usuario',  --- El nombre de la referencia debe ser igual que la del modelo al que se esta relacionando
+
+
+Paquete para subir archivos
+    npm i express-fileupload
+
+        agregar mideleweare
+            const fileUpload = require('express-fileupload');
+
+            // Fileupload - Carga de archivos
+            this.app.use(fileUpload({
+                useTempFiles: true,
+                tempFileDir: '/tmp/'
+            }));
+
+
+Paquete de identificadores 
+    npm i uuid
+
+
+Paquete cloudinary - almacenar imagenes
+
+    npm i cloudinary
